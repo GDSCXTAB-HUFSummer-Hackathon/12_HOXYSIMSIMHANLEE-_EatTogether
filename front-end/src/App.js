@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import school from './images/hufs_img.jpg'
+import logo from './images/hufs_logo2.jpg'
+import './App.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="center">
+        <h1>로그인</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Student Number</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <input type="submit" value="Login" />
+          <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+        </form>
+      </div>
     </div>
   );
 }
