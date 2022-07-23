@@ -1,11 +1,8 @@
-import react from ''
-import school from '../images/hufs_img.jpg'
-import logo from '../images/hufs_logo2.jpg'
+import './Login.css'
 
 function Login() {
-
-  return(
-    <div className = "login_container">
+  return (
+    <div className="Login">
       <div class="center">
         <h1>로그인</h1>
         <form method="post">
@@ -21,11 +18,11 @@ function Login() {
           </div>
           <div class="pass">Forgot Password?</div>
           <input type="submit" value="Login" />
-          <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+          <div class="signup_link">Not a member? <a href="#">Sign-up</a></div>
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default Login;
