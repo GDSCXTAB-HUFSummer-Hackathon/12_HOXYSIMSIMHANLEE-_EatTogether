@@ -1,5 +1,5 @@
 import react from ''
-import school from '../imgase/hufs_img.jpg'
+import school from '../images/hufs_img.jpg'
 import logo from '../images/hufs_logo2.jpg'
 
 function Login() {
