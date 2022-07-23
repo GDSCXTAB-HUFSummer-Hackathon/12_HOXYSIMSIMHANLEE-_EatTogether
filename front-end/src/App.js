@@ -1,6 +1,7 @@
 import school from './images/hufs_img.jpg'
 import logo from './images/hufs_logo2.jpg'
 import './App.css'
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
           </div>
           <div class="pass">Forgot Password?</div>
           <input type="submit" value="Login" />
-          <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+          <div class="signup_link">Not a member? <a href="#">Sign-up</a></div>
         </form>
       </div>
     </div>
