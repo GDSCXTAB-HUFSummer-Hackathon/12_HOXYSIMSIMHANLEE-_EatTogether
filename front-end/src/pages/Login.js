@@ -24,7 +24,7 @@ function Login() {
     <div class="products">
       <h3>미정</h3>
       
-      <div class="product-list">
+      {<div class="product-list">
         <a href="#" class="product">
           <img src="images/sunglasses.jpg" width="225">
           <div class="product-name">Sunglasses</div>
@@ -44,7 +44,7 @@ function Login() {
         </a>
         <div class="clearfix"></div>
       </div>
-      </div>
+      </div>}
     </div>
   )
 }
