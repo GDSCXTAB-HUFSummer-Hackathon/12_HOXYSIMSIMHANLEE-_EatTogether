@@ -1,40 +1,26 @@
-import React, { useState, useEffect }  from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import '@css/style.css';
- 
-import BoardList from '@components/BoardList';
-import BoardNew from '@components/BoardNew';
-import BoardContent from '@components/BoardContent';
-import Footer from '@components/Footer';
- 
-// axios 추가
+import { Route, Link, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Login from './pages/Login';
 import axios from 'axios';
- 
-function App () {
- 
+
+function App() { 
 	// 서버에서 받은 데이터를 console로 찍어서 확인한다.
   useEffect(() => {
     axios.get('/api/test')
       .then(res => console.log(res))
       .catch()
   })
- 
+  
   return (
-    <div className="App">
-      <Router>
-        <div>
-          <Switch>
-            <Route path='/' component={BoardList} exact />
-            <Route path='/BoardNew' component={BoardNew} exact />
-            <Route path='/BoardContent' component={BoardContent} exact />
-          </Switch>
-        </div>
-        <div>
-          <Footer />
-        </div>
-      </Router>
+    <div>
+      <li><Link to="/">Login</Link></li>
+      <li><Link to="/home">Home</Link></li>
+
+      <Routes>
+        <Route path="/*"  exact={true} element={<Login/>}></Route> 
+        <Route path="/home" element={<Home />}></Route>
+      </Routes>
     </div>
   )
 }
- 
 export default App;
