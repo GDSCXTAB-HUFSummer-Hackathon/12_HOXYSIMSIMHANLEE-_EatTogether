@@ -9,10 +9,9 @@ function App() {
       <li><Link to="/home">Home</Link></li>
 
       <Routes>
-        <Route path="/" component={<Login />}></Route> 
-        <Route path="/home" component={<Home />}></Route>
+        <Route path="/*"  exact={true} element={<Login/>}></Route> 
+        <Route path="/home" element={<Home />}></Route>
       </Routes>
-    
     </div>
   );
 }
