@@ -2,6 +2,7 @@ import { Route, Link, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/Login';
 import axios from 'axios';
+import { useEffect } from 'react';
 
 function App() { 
 	// 서버에서 받은 데이터를 console로 찍어서 확인한다.
@@ -12,7 +13,7 @@ function App() {
   })
   
   return (
-    <div>
+    <div className="app">
       <li><Link to="/">Login</Link></li>
       <li><Link to="/home">Home</Link></li>
 
